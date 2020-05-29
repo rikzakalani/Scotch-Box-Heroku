@@ -1,28 +1,29 @@
-# php-getting-started
+# Scotch Box for Heroku
 
-A barebones PHP app that makes use of the [Silex](http://silex.sensiolabs.org/) web framework, which can easily be deployed to Heroku.
+This repository is a very simple starter kit for PHP development hosted on Heroku.
 
-This application supports the [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php) article - check it out.
+It is based on [Scotch Box](https://box.scotch.io/) and it has been modified to be "Heroku-ready." What this amounts to is a development environment that can be deployed to Heroku in literally 2 minutes.
 
-## Deploying
+## Prerequisites
 
-Install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
+In order to get everything to work you need to have the following tools installed:
 
-```sh
-$ git clone git@github.com:heroku/php-getting-started.git # or clone your own fork
-$ cd php-getting-started
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
+- [Vagrant](https://www.vagrantup.com/) for the Vagrant box (Scotch Box)
+- A virtual machine manager like [VirtualBox](https://www.virtualbox.org/)
+- The [Heroku Toolbelt](https://toolbelt.heroku.com/) for Heroku deployments
 
-or
+## Getting Started
+
+1. Clone this repository (`git clone https://github.com/julien731/Scotch-Box-Heroku.git`)
+2. Create your own Git repository and push the code to it (you'll need that for the Heroku deployment)
+2. Run `vagrant up`
+3. Start creating your application in the `public` directory
+
+## Deployment
+
+To deploy your application to Heroku:
+
+1. Create a Heroku app: `heroku create`
+2. Deploy your application: `git push heroku master`
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using PHP on Heroku, see these Dev Center articles:
-
-- [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php)
-- [PHP on Heroku](https://devcenter.heroku.com/categories/php)
